@@ -33,7 +33,7 @@ const Tour = () => {
               </div>
               <div className=' col-span-5 p-6 space-y-3'>
                 <Link to={item.link} className='text-xl font-semibold hover:text-[#F36727]'>{item.name}</Link>
-                <h4 className='font-semibold text-gray-500'>{item.price && item.price.map((price)=>(<>{price}</>))}</h4>
+                <h4 className='font-semibold text-gray-500'>{item.price && item.price.map((price,idx)=>(<span key={idx}>{price}</span>))}</h4>
                 <hr /><br />
                 <Link to={item.link} className='bg-gradient-to-tr from-[#14499E] to-[#f27328] rounded-md px-4 py-2 text-white font-medium hover:border border-[#14499E] hover:text-[#14499E] hover:bg-none  transition duration-300 ease-in-out'>Book Now</Link>
               </div>

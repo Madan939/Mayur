@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Tour from './pages/Tours'
 import Package1 from './pages/ToursPackage/Package1'
+import Package2 from './pages/ToursPackage/Package2'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Tour />} />
         <Route path='/dubai-3-nights-4-days-package-explore-dubai' element={<Package1/>}/>
+        <Route path='/dubai-Helicopter-view' element={<Package2/>}/>
       </Routes>
     </>
   )
